@@ -22,10 +22,8 @@ end
 def reduce_to_all_true(array)
   truthy = true
   array.reduce{ |word|
-      if word
-        truthy = word
-      else
-        return false
+      if !word
+        truthy = false
       end
   }
   truthy
