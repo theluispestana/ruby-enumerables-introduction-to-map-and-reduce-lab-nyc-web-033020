@@ -23,7 +23,7 @@ def reduce_to_all_true(array)
   is_true = true
   array.inject { |word|
     if !!word
-      is_true = false
+      return false
     end
   }
   is_true
