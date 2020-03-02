@@ -15,7 +15,7 @@ def map_to_square(nums)
   squared_nums = nums.map{ |num| num ** 2 }
 end
 
-def reduce_to_total(nums, starting_point=nil)
+def reduce_to_total(nums, starting_point=nums[0])
   # if starting_point != nil
   #   total = nums.reduce(starting_point, :+)
   # else
