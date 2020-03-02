@@ -16,11 +16,12 @@ def map_to_square(nums)
 end
 
 def reduce_to_total(nums, starting_point=nil)
+  total = 0
   if starting_point != nil
-    nums.reduce(starting_point, :+)
+    total = nums.reduce(starting_point, :+)
   else
-    nums.reduce(:+)
+    total = nums.reduce(:+)
   end
-  nums
+  total
   # nums.reduce(starting_point) { |sum, num| sum + num }
 end
