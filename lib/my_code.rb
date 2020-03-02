@@ -18,3 +18,8 @@ end
 def reduce_to_total(nums, starting_point = 0)
   nums.reduce(starting_point) { |sum, num| sum + num }
 end
+
+def reduce_to_all_true(array)
+  array.reduce{ |word| return false if !word }
+  true
+end
