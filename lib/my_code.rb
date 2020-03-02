@@ -15,6 +15,6 @@ def map_to_square(nums)
   squared_nums = nums.map{ |num| num ** 2 }
 end
 
-def reduce_to_total(nums, starting_point=0)
+def reduce_to_total(nums, starting_point = 0)
   nums.reduce(starting_point) { |sum, num| sum + num }
 end
