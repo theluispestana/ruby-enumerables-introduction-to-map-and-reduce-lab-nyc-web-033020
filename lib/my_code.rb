@@ -20,7 +20,7 @@ def reduce_to_total(nums, starting_point = 0)
 end
 
 def reduce_to_all_true(array)
-  array.reduce { |word| puts word }
+  array.reduce { |word| print 'test' }
 end
 
 # def reduce_to_any_true(array)
