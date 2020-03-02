@@ -20,6 +20,6 @@ def reduce_to_total(nums, starting_point = 0)
 end
 
 def reduce_to_all_true(array)
-  array.reduce{ |word| return false if !word }
+  array.reduce{ |word| return word if !word }
   true
 end
