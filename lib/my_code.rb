@@ -20,13 +20,7 @@ def reduce_to_total(nums, starting_point = 0)
 end
 
 def reduce_to_all_true(array)
-  is_true = true
-  array.inject { |word|
-    if !!word
-      return false
-    end
-  }
-  is_true
+  pp array
 end
 
 # def reduce_to_any_true(array)
