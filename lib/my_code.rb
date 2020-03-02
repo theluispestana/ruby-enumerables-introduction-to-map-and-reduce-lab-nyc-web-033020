@@ -21,7 +21,7 @@ end
 
 def reduce_to_all_true(array)
   pp array
-  array.reduce { |memo, word| print "#{memo} #{word}" }
+  array.reduce { |memo| print "#{memo}" }
 end
 
 # def reduce_to_any_true(array)
