@@ -21,7 +21,7 @@ end
 
 def reduce_to_all_true(array)
   array.inject { |word| return false if word == false }
-  array
+  false
 end
 
 # def reduce_to_any_true(array)
