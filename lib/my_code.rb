@@ -23,11 +23,12 @@ def reduce_to_all_true(array)
   truthy = true
   array.reduce{ |word|
       if word
-        truthy = true
+        truthy = word
       else
         return false
       end
   }
+  truthy
 end
 
 # def reduce_to_any_true(array)
