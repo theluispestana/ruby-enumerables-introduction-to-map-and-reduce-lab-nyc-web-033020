@@ -21,6 +21,7 @@ end
 
 def reduce_to_all_true(array)
   array.reduce { |memo, word| return false if !memo || !word  }
+  true
 end
 
 # def reduce_to_any_true(array)
